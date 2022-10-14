@@ -86,7 +86,7 @@ a {
 
 #navbar .menu:hover .menu-hover,
 #navbar .menu:hover .menu-hover > span,
-#navbar .menu:hover .menu-hover > i {
+#navbar .menu:hover .menu-hover > .ri-icon{
     color: var(--text) !important;
     font-weight: 600;
     background: linear-gradient(var(--bg), transparent) ;
@@ -131,7 +131,7 @@ a {
     top: 0;
     right: 2.5em;
     height: 100%;
-    width: 10em;
+    width: 11em;
     border: 1px solid var(--text-light);
     border-right: 0;
     cursor: pointer;
@@ -222,7 +222,7 @@ a {
     background: var(--white);
 }
 
-#navbar .search-div .search-select li i {
+#navbar .search-div .search-select li .ri-icon{
     color: var(--text-light) !important;
     font-weight: 500 !important;
 }

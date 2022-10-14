@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import 'remixicon/fonts/remixicon.css';
 
+import * as RiIcons from 'react-icons/ri';
+
 import '../css/navbar.css';
 
 
@@ -23,7 +25,7 @@ const Navbar = () => {
             </div>
             <div className='menu'>
                 <div className='menu-hover'>
-                    <i className="menubar ri-menu-line"></i>
+                    <RiIcons.RiMenuLine className="menubar ri-icon ri-menu-line" />
                     <span>MENU</span>
                 </div>
                 <div id="menu-info">
@@ -150,17 +152,17 @@ const Navbar = () => {
                     <div>
                         <div className='category-text'>
                             <div >{category}</div>
-                            <i className="icon ri-menu-5-line"></i>
+                            <RiIcons.RiMenu5Line  className="icon ri-icon ri-menu-5-line"/>
                         </div>
                         <ul className='search-select'>
                             {categories.map(({id, name})=>(
                                 <li onClick={()=>{ setCategory(name)}} key={id}>
                                     <div className='select-text'>
-                                        <i className="ri-smartphone-line"></i>
-                                        <span>{name}</span>
+                                        <RiIcons.RiSmartphoneLine  className="ri-icon ri-smartphone-line"/>
+                                                    <span>{name}</span>
                                     </div>
-                                    <i className="ri-arrow-drop-right-line"></i>
-                                </li>
+                                    <RiIcons.RiArrowDropRightLine className="ri-icon ri-arrow-drop-right-line"/>
+                                        </li>
                             ))
                             }
                         </ul>
@@ -168,21 +170,25 @@ const Navbar = () => {
                 </div>
 
                 <button className='search-btn'>
-                    <i className="ri-search-line search-icon"></i>
+                    <RiIcons.RiSearchLine className="ri-icon ri-search-line search-icon"/>
+                    <i></i>
                 </button>
             </div>
 
             <div className='nav'>
                 <div>
-                    <i className="ri-user-6-line icon"></i>
+                    <RiIcons.RiUser6Line className="ri-icon ri-user-6-line icon"/>
+                    <i></i>
                     <span>Account</span>
                 </div>
                 <div>
-                    <i className="ri-heart-line icon"></i>
+                    <RiIcons.RiHeartLine className="ri-icon ri-heart-line icon"/>
+                    <i></i>
                     <span>Wishlist</span>
                 </div>
                 <div>
-                    <i className="ri-shopping-cart-line icon"></i>
+                    <RiIcons.RiShoppingCartLine className="ri-shopping-cart-line icon"/>
+                    <i></i>
                     <span>Cart</span>
                 </div>
             </div>

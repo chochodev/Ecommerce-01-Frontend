@@ -90,7 +90,7 @@
     color: var(--text);
 }
 
-#product-card .product-info .price-d .cart i {
+#product-card .product-info .price-d .cart .ri-icon {
     color: var(--yellow);
     font-size: 1.5em;
     height: 1.3em;

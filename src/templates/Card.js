@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import * as RiIcons from 'react-icons/ri';
+
 import '../css/card.css';
 
 const Card = () => {
@@ -20,11 +22,11 @@ const toggleCart = () => {
             <div className='product-info'>
                 <span>Front Wheel Hub Bearing Assembly </span>
                 <div className='rating'> 
-                    <i className='star ri-star-fill'></i>
-                    <i className='star ri-star-fill'></i>
-                    <i className='star ri-star-fill'></i>
-                    <i className='star ri-star-line'></i>
-                    <i className='star ri-star-line'></i>
+                    <RiIcons.RiStarFill className='ri-icon star ri-star-fill'/>
+                    <RiIcons.RiStarFill className='ri-icon star ri-star-fill'/>
+                    <RiIcons.RiStarFill className='ri-icon star ri-star-fill'/>
+                    <RiIcons.RiStarLine className='ri-icon star ri-star-line'/>
+                    <RiIcons.RiStarLine className='ri-icon star ri-star-line'/>
                 </div>
                 <div className='price'>
                     <span>&#8358;25,999.98</span>
@@ -33,8 +35,8 @@ const toggleCart = () => {
                 <div className='price-d'>
                     <span> -60%</span>
                     <Link to='' onClick={toggleCart} className='cart'>
-                        {!addToCart && <i className='ri-heart-line'></i>}
-                        {addToCart && <i className='ri-heart-fill'></i>}
+                        {!addToCart && <RiIcons.RiHeartLine className='ri-icon ri-heart-line'/>}
+                        {addToCart && <RiIcons.RiHeartFill className='ri-icon ri-heart-fill'/>}
                     </Link>
                 </div>
             </div>

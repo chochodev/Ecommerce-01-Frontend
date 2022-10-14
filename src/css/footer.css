@@ -53,6 +53,16 @@
     color: var(--text-white);
 }
 
+#footer .foot > div .contact-info > span {
+    display: flex;
+    align-items: center;
+    height: max-content;
+}
+
+#footer .foot .contact-info .ri-icon {
+    margin: auto 0;
+}
+
 #footer .foot > div .contact-info > a {
     color: var(--text-light);
     font-size: .8em;
@@ -72,9 +82,10 @@
     width: max-content;
 }
 
-#footer .foot .social-media-icons > a i {
+#footer .foot .social-media-icons > a .ri-icon {
     font-size: 2.5em;
     color: var(--text-white);
+    margin: auto 0;
 }
 
 /*===========================================*/
@@ -85,9 +96,10 @@
     gap: .2em;
 }
 
-#footer .foot .foot-links i {
+#footer .foot .foot-links .ri-icon {
     color: var(--text-white);
     font-size: 1.1em;
+    margin: auto 0;
 }
 
 #footer .foot .foot-links span {

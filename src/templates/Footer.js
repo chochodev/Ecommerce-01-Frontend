@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import * as RiIcons from 'react-icons/ri';
+
 import '../css/footer.css';
 
 const Footer = () => {
@@ -11,14 +13,14 @@ const Footer = () => {
             <div>
                 <div className='contact-info'>
                     <span>
-                        <i className='ri-mail-line'></i>
+                        <RiIcons.RiMailLine className='ri-icon ri-mail-line'/>
                         <span>Email:</span>
                     </span>
                     <a href='#'>mikeychocho@gmail.com</a>
                 </div>
                 <div className='contact-info'>
                     <span>
-                        <i className='ri-phone-line'></i>
+                        <RiIcons.RiPhoneLine className='ri-icon ri-phone-line'/>
                         <span>Phone:</span>
                     </span>
                     <a href='#'>+234 903 910 8667</a>
@@ -26,19 +28,19 @@ const Footer = () => {
             </div>
             <div className='social-media-icons'>
                 <a href='#'>
-                    <i className='ri-github-line'></i>
+                    <RiIcons.RiGithubFill className='ri-icon ri-github-line'/>
                 </a>
                 <a href='#'>
-                    <i className='ri-github-line'></i>
+                    <RiIcons.RiFacebookFill className='ri-icon ri-github-line'/>
                 </a>
                 <a href='#'>
-                    <i className='ri-github-line'></i>
+                    <RiIcons.RiInstagramFill className='ri-icon ri-github-line'/>
                 </a>
                 <a href='#'>
-                    <i className='ri-github-line'></i>
+                    <RiIcons.RiTwitterFill className='ri-icon ri-github-line'/>
                 </a>
                 <a href='#'>
-                    <i className='ri-github-line'></i>
+                    <RiIcons.RiWhatsappFill className='ri-icon ri-github-line'/>
                 </a>
             </div>
         </div>
@@ -47,27 +49,27 @@ const Footer = () => {
             <span>Support</span>
             <div className='foot-links'>
                 <Link to='' className='a-tag'>
-                    <i className='ri-arrow-drop-right-line'></i>
+                    <RiIcons.RiArrowDropRightLine className='ri-icon ri-arrow-drop-right-line'/>
                     <span>Contact Us</span>
                 </Link>
                 <Link to='' className='a-tag'>
-                    <i className='ri-arrow-drop-right-line'></i>
+                    <RiIcons.RiArrowDropRightLine className='ri-icon ri-arrow-drop-right-line'/>
                     <span>Payment Policy</span>
                 </Link>
                 <Link to='' className='a-tag'>
-                    <i className='ri-arrow-drop-right-line'></i>
+                    <RiIcons.RiArrowDropRightLine className='ri-icon ri-arrow-drop-right-line'/>
                     <span>Return Policy</span>
                 </Link>
                 <Link to='' className='a-tag'>
-                    <i className='ri-arrow-drop-right-line'></i>
+                    <RiIcons.RiArrowDropRightLine className='ri-icon ri-arrow-drop-right-line'/>
                     <span>Privacy Policy</span>
                 </Link>
                 <Link to='' className='a-tag'>
-                    <i className='ri-arrow-drop-right-line'></i>
+                    <RiIcons.RiArrowDropRightLine className='ri-icon ri-arrow-drop-right-line'/>
                     <span>FAQ</span>
                 </Link>
                 <Link to='' className='a-tag'>
-                    <i className='ri-arrow-drop-right-line'></i>
+                    <RiIcons.RiArrowDropRightLine className='ri-icon ri-arrow-drop-right-line'/>
                     <span>Terms & Condition</span>
                 </Link>
             </div>
@@ -77,27 +79,27 @@ const Footer = () => {
             <span>Quick Links</span>
             <div className='foot-links'>
                 <Link to='' className='a-tag'>
-                    <i className='ri-arrow-drop-right-line'></i>
+                    <RiIcons.RiArrowDropRightLine className='ri-icon ri-arrow-drop-right-line'/>
                     <span>My Account</span>
                 </Link>
                 <Link to='' className='a-tag'>
-                    <i className='ri-arrow-drop-right-line'></i>
+                    <RiIcons.RiArrowDropRightLine className='ri-icon ri-arrow-drop-right-line'/>
                     <span>Shopping Cart</span>
                 </Link>
                 <Link to='' className='a-tag'>
-                    <i className='ri-arrow-drop-right-line'></i>
+                    <RiIcons.RiArrowDropRightLine className='ri-icon ri-arrow-drop-right-line'/>
                     <span>My Wishlist</span>
                 </Link>
                 <Link to='' className='a-tag'>
-                    <i className='ri-arrow-drop-right-line'></i>
+                    <RiIcons.RiArrowDropRightLine className='ri-icon ri-arrow-drop-right-line'/>
                     <span>Sign In</span>
                 </Link>
                 <Link to='' className='a-tag'>
-                    <i className='ri-arrow-drop-right-line'></i>
+                    <RiIcons.RiArrowDropRightLine className='ri-icon ri-arrow-drop-right-line'/>
                     <span>Sign Out</span>
                 </Link>
                 <Link to='' className='a-tag'>
-                    <i className='ri-arrow-drop-right-line'></i>
+                    <RiIcons.RiArrowDropRightLine className='ri-icon ri-arrow-drop-right-line'/>
                     <span>Terms & Condition</span>
                 </Link>
             </div>
