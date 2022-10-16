@@ -26,8 +26,11 @@ const Navbar = () => {
             <div className='menu'>
                 <div className='menu-hover'>
                     <RiIcons.RiMenuLine className="menubar ri-icon ri-menu-line" />
-                    <span>MENU</span>
+                    <span className='menu-name'>MENU</span>
+                    <RiIcons.RiArrowDropDownLine className="menubar ri-icon ri-menu-line" />
                 </div>
+                
+                {/* MENU CONTAINER DATA */}
                 <div id="menu-info">
                     <div className="hot-deals">
                         <div className="item-container">
@@ -145,6 +148,8 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
+
+            {/* SEARCH BAR */}
             <div className='search-div'>
                 <input type='text' placeholder='what are you looking for?' className='search' />
 
@@ -171,24 +176,42 @@ const Navbar = () => {
 
                 <button className='search-btn'>
                     <RiIcons.RiSearchLine className="ri-icon ri-search-line search-icon"/>
-                    <i></i>
                 </button>
             </div>
 
             <div className='nav'>
                 <div>
                     <RiIcons.RiUser6Line className="ri-icon ri-user-6-line icon"/>
-                    <i></i>
                     <span>Account</span>
                 </div>
                 <div>
                     <RiIcons.RiHeartLine className="ri-icon ri-heart-line icon"/>
-                    <i></i>
                     <span>Wishlist</span>
                 </div>
                 <div>
                     <RiIcons.RiShoppingCartLine className="ri-shopping-cart-line icon"/>
-                    <i></i>
+                    <span>Cart</span>
+                </div>
+            </div>
+
+        </div>
+        <div style={{display: 'none'}} className='nav-sm'>
+            <div>
+                <RiIcons.RiUser6Line className="ri-icon ri-user-6-line icon"/>
+                <span>Account</span>
+                <RiIcons.RiArrowDropDownLine className="menubar icon ri-icon ri-menu-line" />
+            </div>
+            <div className='nav-sm-data'>
+                <div>
+                    <RiIcons.RiAccountBoxLine className='ri-icon icon'/>
+                    <span>My Account</span>
+                </div>
+                <div>
+                    <RiIcons.RiHeartLine className="ri-icon ri-heart-line icon"/>
+                    <span>Wishlist</span>
+                </div>
+                <div>
+                    <RiIcons.RiShoppingCartLine className="ri-shopping-cart-line icon"/>
                     <span>Cart</span>
                 </div>
             </div>

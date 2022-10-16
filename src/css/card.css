@@ -124,3 +124,15 @@
     padding: .5em 2em;
     border-radius: .25em;
 }
+
+
+@media (max-width: 680px) {
+    /* #product-card {
+        height: 24em;
+        width: 12em;
+    }
+
+    #product-card .product-img img {
+        height: max-content;
+    } */
+}

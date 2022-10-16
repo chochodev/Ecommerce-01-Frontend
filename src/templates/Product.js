@@ -1,10 +1,14 @@
-import React from 'react'
+import React from 'react';
 import 'remixicon/fonts/remixicon.css';
+
+import * as RiIcons from 'react-icons/ri';
+
+import '../css/product.css';
 
 const Product = () => {
   return (
     <div>
-        <i className='ri-smartphone-line'></i>
+        <div></div>
     </div>
   )
 }
