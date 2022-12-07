@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import 'remixicon/fonts/remixicon.css';
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import * as RiIcons from 'react-icons/ri';
 
-import '../css/navbar.css';
-
+import './css/navbar.css';
 
 const categories = [
     {id: 1, name: 'Phones'},
@@ -181,16 +181,22 @@ const Navbar = () => {
 
             <div className='nav'>
                 <div>
-                    <RiIcons.RiUser6Line className="ri-icon ri-user-6-line icon"/>
-                    <span>Account</span>
+                    <Link to={'/'} className="icon">
+                        <RiIcons.RiUser6Line className="ri-icon ri-user-6-line"/>
+                    </Link>
+                    <span>Account</span>    
                 </div>
                 <div>
-                    <RiIcons.RiHeartLine className="ri-icon ri-heart-line icon"/>
-                    <span>Wishlist</span>
+                    <HashLink smooth to='/cart#mainWishlist' className="icon">
+                        <RiIcons.RiHeartLine className="ri-icon ri-heart-line"/>
+                    </HashLink>
+                    <span>Wishlist</span>    
                 </div>
                 <div>
-                    <RiIcons.RiShoppingCartLine className="ri-shopping-cart-line icon"/>
-                    <span>Cart</span>
+                    <Link to={'/cart'} className="icon">
+                        <RiIcons.RiShoppingCartLine className="ri-icon ri-shopping-cart-line"/>
+                    </Link>
+                    <span>Cart</span>    
                 </div>
             </div>
 

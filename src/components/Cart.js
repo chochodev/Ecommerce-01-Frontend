@@ -1,15 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import * as RiIcons from 'react-icons/ri';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 import Navbar from '../templates/Navbar';
 
 import '../css/cart.css';
-import Card from '../templates/Card';
 import CartItem from '../templates/CartItem';
 import Footer from '../templates/Footer';
 
 const Cart = () => {
+    // BACKEND
+    let [products, setProducts] = useState([])
+
+    useEffect(() => {
+        getProducts()
+    }, [])
+
+    let getProducts = async () => {
+        let response = await fetch('http://127.0.0.1:8000/api/products')
+        let data = await response.json()
+        console.log(data)
+        setProducts(data)
+    }
   return (
     <div id='cart'>
         <Navbar className='navbar'/>
@@ -22,8 +34,13 @@ const Cart = () => {
         <div className='body'>
             <div className='cart-items'>
                 <ul className='items'>
-                    <CartItem />
-                    <CartItem />
+
+                    {products.map((product, index) => {
+                        return(
+                            <CartItem product={product} key={index}/>
+                        )
+                    })}
+                    
                 </ul>
                 <div className='aside'>
                     <div className='info'>
@@ -37,6 +54,7 @@ const Cart = () => {
                             </div>
                             <p>Delivery fee not included yet</p>
                         </div>
+                        {/* hr */}
                         <p className='hr'></p>
 
                         <Link to='' className='checkout'>Checkout</Link>
@@ -48,7 +66,7 @@ const Cart = () => {
                 </div>
             </div>
 
-            <div className='wishlist-items'>
+            <div className='wishlist-items' id='mainWishlist'>
                 <span>Wishlist Items</span>
                 <ul className='items'>
                     <li className='item'>

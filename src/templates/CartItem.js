@@ -1,26 +1,27 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useParams } from 'react-router-dom';
 
 import * as RiIcons from 'react-icons/ri';
 
-import '../css/cartitem.css';
+import './css/cartitem.css';
 
-const CartItem = () => {
+const CartItem = ({product}) => {
+
     const [amount, setAmount] = useState(1)
   return (
     <li id='cart-items'>
-        <Link to='' className='a-tag'>
+        <div className='a-tag'>
             <div className='description'>
                 <img src='/assets/images/product_01.jpg' className='img'/>
                 <div>
                     <div className='title'>
-                        <h3>Front Wheel Hub Bearing Assembly</h3>
-                        <p className='seller'>Seller: the seller na</p>
+                        <h3>{product.name}</h3>
+                        <p className='seller'>Seller: {product.seller_name}</p>
                         <span>In Stock</span>
                     </div>
                     <div className='price'>
-                        <span>&#8358;19,992.98<small> X 2</small></span>
-                        <span>&#8358;39,990.00</span>
+                        <span>&#8358;{product.new_price}<small> X {amount}</small></span>
+                        <span>&#8358;{product.new_price * amount}</span>
                     </div>
                 </div>
             </div>
@@ -43,7 +44,7 @@ const CartItem = () => {
                     </Link>
                 </div>
             </div>
-        </Link>
+        </div>
 
         <p className='hr'></p>
     </li>

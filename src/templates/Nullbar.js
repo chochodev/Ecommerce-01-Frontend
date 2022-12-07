@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../css/nullbar.css';
+import './css/nullbar.css';
 
 const Nullbar = () => {
     return(

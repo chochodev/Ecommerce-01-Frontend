@@ -26,25 +26,14 @@ const Card = ({product, index}) => {
     // BACKEND FOR PUT REQUEST ( UPDATE )
     const {id} = useParams()
 
-    // let updateProduct = async () => {
-    //     let response = await fetch(`http://127.0.0.1:8000/api/product/${id}/update`, {
-    //         method: "PUT",
-    //         headers: {
-    //             'Content-Type': 'application/json'
-    //         },
-    //         body:JSON.stringify(toggleWish())
-    //     })
-    // }
-
-    let updateWishList = async (value) => {
-        let response = await fetch(`http://127.0.0.1:8000/api/product/${product.id}/update`, {
+    let updateProduct = async () => {
+        let response = await fetch(`http://127.0.0.1:8000/api/product/${id}/update`, {
             method: "PUT",
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({'wishlist': value})
+            body:JSON.stringify(toggleWish())
         })
-
     }
 
     // CARTLIST UPDATE FUNCTION
@@ -56,15 +45,17 @@ const Card = ({product, index}) => {
     // WISHLIST UPDATE FUNCTION
     const [addToWish, setAddToWish] = useState(product.wishlist);
     const toggleWish = () => {
-        if (addToWish == true) {
-            setAddToWish(false);
-            updateWishList(false)
+        if (product.wishlist == true) {
+            return false;
         }
         else if (product.wishlist == false) {
-            setAddToWish(true);
-            updateWishList(true)
+            return true;
         }
     }
+
+    useEffect(() => {
+
+    }, [toggleWish])
 
 
   return (
@@ -89,7 +80,8 @@ const Card = ({product, index}) => {
                 <div className='price-d'>
                     <span> -{product.discount}%</span>
                     <Link to='' onClick={toggleWish} className='cart'>
-                        {addToWish ? <RiIcons.RiHeartFill className='ri-icon ri-heart-fill'/> : <RiIcons.RiHeartLine className='ri-icon ri-heart-line'/>}
+                        {!addToWish && <RiIcons.RiHeartLine className='ri-icon ri-heart-line'/>}
+                        {addToWish && <RiIcons.RiHeartFill className='ri-icon ri-heart-fill'/>}
                     </Link>
                 </div>
             </div>
