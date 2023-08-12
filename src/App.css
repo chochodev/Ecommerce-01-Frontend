@@ -1,0 +1,47 @@
+:root {
+  --text: #162a48;
+  --text-light: #969696;
+  --text-white: #dddddd;
+  --text-bold: #222222;
+  --object: #717171;
+  --blue: #5677fc;
+  --black: #25272e;
+  --red: #e66868;
+  --white: #eeeeee;
+  --hover: #f6f6f6;
+  --bg: #f4f8fc;
+  --yellow: #fc9900;
+
+  --sh: 0 0 5px -1px rgb(0 0 0 / 15%);
+  --sh-i: -1px 1px 4px -1px rgba(0,0,0,0.22),
+   -1px 1px 4px -1px rgba(0,0,0,0.22),
+    -1px 1px 4px -1px rgba(0,0,0,0.22);
+}
+
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.Slider{
+  user-select: none;
+}
+.Slider::-webkit-scrollbar{
+  height: .2em;
+  width: .2em;
+}
+.Slider::-webkit-scrollbar-thumb{
+  border-radius: .2em;
+}
+.Slider::-webkit-scrollbar-track{
+  border-radius: .2em;
+}
