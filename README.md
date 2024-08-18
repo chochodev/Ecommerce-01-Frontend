@@ -1,6 +1,7 @@
 # MallGo
 ## E-commerce website
-It has several functionality as a normal e-commerce
+It has several functionality as a normal e-commerce.
+
 ### As a buyer
 * You can search the mall
 * Save items
