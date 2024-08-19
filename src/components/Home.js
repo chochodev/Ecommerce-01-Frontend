@@ -24,7 +24,7 @@ const Home = () => {
     }
 
     // FRONTEND
-    let [wishlist, setWishlist] = useState(false);
+    // let [wishlist, setWishlist] = useState(false);
     
 
     return(
