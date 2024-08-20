@@ -1,5 +1,5 @@
 # MallGo
-* Thinking of changing it to nextjs or vite
+* Thinking of changing it to nextjs or vite.
 
 ## E-commerce website
 It has several functionality as a normal e-commerce.
