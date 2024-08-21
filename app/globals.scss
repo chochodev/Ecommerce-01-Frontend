@@ -1,5 +1,29 @@
-$primary-color: #64ff00;
- 
-:export {
-  primaryColor: $primary-color;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --primary-font: "Inter", sans-serif;
+}
+
+* {
+    font-family: var(--primary-font);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+a, button, .icon, img {
+    user-select: none;
+    background: none;
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
 }
