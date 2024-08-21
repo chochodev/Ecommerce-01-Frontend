@@ -5,7 +5,7 @@ import * as RiIcons from 'react-icons/ri';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
-import '../css/product.css';
+import './product.css';
 
 const Product = () => {
 

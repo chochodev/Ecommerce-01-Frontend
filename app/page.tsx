@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 import Nullbar from '@/components/Nullbar';
 import Card from '@/components/Card';
 
-import '../css/home.css';
+import './home.css';
 
 const Home = () => {
     

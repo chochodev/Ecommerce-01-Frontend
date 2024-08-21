@@ -4,7 +4,7 @@ import { Link, useParams } from 'react-router-dom';
 
 import Navbar from '@/components/Navbar';
 
-import '../css/cart.css';
+import './cart.css';
 import CartItem from '@/components/CartItem';
 import Footer from '@/components/Footer';
 
