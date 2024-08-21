@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import Link from 'next/link';
 
 import * as RiIcons from 'react-icons/ri';
 
@@ -81,13 +81,13 @@ const Card = ({product, index}) => {
                 </div>
                 <div className='price-d'>
                     <span> -{product.discount}%</span>
-                    <Link to='' onClick={toggleWish} className='cart'>
+                    <Link href='' onClick={toggleWish} className='cart'>
                         {!addToWish && <RiIcons.RiHeartLine className='ri-icon ri-heart-line'/>}
                         {addToWish && <RiIcons.RiHeartFill className='ri-icon ri-heart-fill'/>}
                     </Link>
                 </div>
             </div>
-            <Link to='' onClick={toggleCart} className='cart'>
+            <Link href='' onClick={toggleCart} className='cart'>
                 {!addToCart && <p>Add to Cart</p>}
                 {addToCart &&  <p>Remove from Cart</p>}
             </Link>

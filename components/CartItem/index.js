@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import Link from 'next/link';
 
 import * as RiIcons from 'react-icons/ri';
 
@@ -36,11 +36,11 @@ const CartItem = ({product}) => {
                 </div>
 
                 <div className='button'>
-                    <Link to='' className='a-tag'>
+                    <Link href='' className='a-tag'>
                         <RiIcons.RiDeleteBin2Line className='icon'/>
                         <span>Remove Item</span>
                     </Link>
-                    <Link to='' className='a-tag'>
+                    <Link href='' className='a-tag'>
                         <RiIcons.RiHeartLine className='ri-icon'/>
                         <span>Add to Wishlist</span>
                     </Link>

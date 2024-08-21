@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import Link from 'next/link';
 import * as RiIcons from 'react-icons/ri';
 
 import Navbar from '@/components/Navbar';
@@ -34,7 +34,7 @@ const Product = () => {
                     <img src='/assets/images/product_01.jpg' className='img'/>
                     <div className='seller'>
                         <span>Seller: </span>
-                        <Link to='' className='a-tag'>{product.seller_name}</Link>
+                        <Link href='' className='a-tag'>{product.seller_name}</Link>
                     </div>
                 </div>
 
@@ -69,11 +69,11 @@ const Product = () => {
                     </div>
 
                     <div className='button'>
-                        <Link to='' className='a-tag'>
+                        <Link href='' className='a-tag'>
                             <RiIcons.RiShoppingCart2Line className='icon'/>
                             <span>Add to Cart</span>
                         </Link>
-                        <Link to='' className='a-tag'>
+                        <Link href='' className='a-tag'>
                             <RiIcons.RiHeartLine className='ri-icon'/>
                             <span>Add to Wishlist</span>
                         </Link>
@@ -135,7 +135,7 @@ const Product = () => {
                             <RiIcons.RiTruckLine className='icon' />
                             <div>
                                 <p className='heading'>Return Policy</p>
-                                <span className='date'>Free return within 15 days for Official Store items and 7 days for other eligible items <Link to='' className='a-tag'>See more</Link></span>
+                                <span className='date'>Free return within 15 days for Official Store items and 7 days for other eligible items <Link href='' className='a-tag'>See more</Link></span>
                             </div>
                         </div>
                     </div>
@@ -155,7 +155,7 @@ const Product = () => {
                             </div>
                         </div>
                     </div>
-                    <Link to='' className='a-tag'>ADD TO CART</Link>
+                    <Link href='' className='a-tag'>ADD TO CART</Link>
                 </div>
             </div>
 

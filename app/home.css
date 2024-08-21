@@ -1,0 +1,41 @@
+.Slider{
+    user-select: none;
+}
+.Slider::-webkit-scrollbar{
+    height: .1em;
+    width: .1em;
+}
+.Slider::-webkit-scrollbar-thumb{
+    border-radius: .1em;
+}
+.Slider::-webkit-scrollbar-track{
+    border-radius: .1em;
+}
+
+#home-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#home-page > div {
+    width: 100% !important;
+}
+
+#home-page .navbar {
+    z-index: 100;
+    margin-bottom: .5em;
+}
+
+#home-page .home-cards {
+    padding: calc(2vw + .5rem) 5vw;
+}
+
+#home-page .home-cards .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: calc(1rem + 2vw);
+}
