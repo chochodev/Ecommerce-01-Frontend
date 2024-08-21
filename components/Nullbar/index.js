@@ -1,13 +1,14 @@
-import React from 'react';
+"use client";
 
-import './css/nullbar.css';
+import React from 'react';
+import '@/styles/components/nullbar.css';
 
 const Nullbar = () => {
     return(
         <>
         <div id="nullbar">
             <div>
-                <span>You're not Signed in</span>
+                <span>You&apos;re not Signed in</span>
             </div>
             <div>
                 <a href="#">Sign In</a>

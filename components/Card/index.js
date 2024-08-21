@@ -1,9 +1,11 @@
+"use client";
+
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
 import * as RiIcons from 'react-icons/ri';
 
-import './css/card.css';
+import '@/styles/components/card.css';
 
 const Card = ({product, index}) => {
 

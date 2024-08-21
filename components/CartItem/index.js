@@ -1,9 +1,11 @@
+"use client";
+
 import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
 import * as RiIcons from 'react-icons/ri';
 
-import './css/cartitem.css';
+import '@/styles/components/cartitem.css';
 
 const CartItem = ({product}) => {
 

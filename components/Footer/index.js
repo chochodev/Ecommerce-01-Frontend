@@ -1,9 +1,11 @@
+"use client";
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 import * as RiIcons from 'react-icons/ri';
 
-import './css/footer.css';
+import '@/styles/components/footer.css';
 
 const Footer = () => {
   return (

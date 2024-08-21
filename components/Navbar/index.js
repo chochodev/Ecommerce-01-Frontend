@@ -1,10 +1,12 @@
+"use client";
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
 import * as RiIcons from 'react-icons/ri';
 
-import './css/navbar.css';
+import '@/styles/components/navbar.css';
 
 const categories = [
     {id: 1, name: 'Phones'},
