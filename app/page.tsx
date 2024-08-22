@@ -11,7 +11,6 @@ import './home.css';
 
 const Home = () => {
     
-    // BACKEND
     let [products, setProducts] =  useState([]);
 
     useEffect(() => {
@@ -24,10 +23,6 @@ const Home = () => {
         console.log(data);
         setProducts(data);
     }
-
-    // FRONTEND
-    // let [wishlist, setWishlist] = useState(false);
-    
 
     return(
         <div id='home-page' className='Slider'>
