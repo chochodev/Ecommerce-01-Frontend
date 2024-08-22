@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useEffect } from 'react';
 import * as RiIcons from 'react-icons/ri';
 import Link from 'next/link';
@@ -57,7 +59,7 @@ const Cart = () => {
                         {/* hr */}
                         <p className='hr'></p>
 
-                        <Link href='' className='checkout'>Checkout</Link>
+                        <Link href='/' className='checkout'>Checkout</Link>
                     </div>
                     <div className='return'>
                         <span>Returns are easy</span> 
@@ -70,7 +72,7 @@ const Cart = () => {
                 <span>Wishlist Items</span>
                 <ul className='items'>
                     <li className='item'>
-                    <Link href=''>
+                    <Link href='/'>
                         <img src='/assets/images/product_01.jpg' className='img'/>
                         <div className='description'>
                             <h3>Front Wheel Hub Bearing Assembly</h3>

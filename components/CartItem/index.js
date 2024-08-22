@@ -36,11 +36,11 @@ const CartItem = ({product}) => {
                 </div>
 
                 <div className='button'>
-                    <Link href='' className='a-tag'>
+                    <Link href='/' className='a-tag'>
                         <RiIcons.RiDeleteBin2Line className='icon'/>
                         <span>Remove Item</span>
                     </Link>
-                    <Link href='' className='a-tag'>
+                    <Link href='/' className='a-tag'>
                         <RiIcons.RiHeartLine className='ri-icon'/>
                         <span>Add to Wishlist</span>
                     </Link>

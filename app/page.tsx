@@ -19,7 +19,7 @@ const Home = () => {
     }, []);
 
     let getProducts = async () => {
-        let response = await fetch('http://127.0.0.1:8000/api/products/');
+        let response = await fetch('/data/products/index.json/');
         let data = await response.json();
         console.log(data);
         setProducts(data);
@@ -40,12 +40,10 @@ const Home = () => {
             <div className='home-cards'>
                 <div className='cards'>
 
-                    {/* CARD */}
-                    {products.map((product, index) => {
-                        return (
-                            <Card key={index} product={product} index={index} />
-                        );
-                    })}
+                {/* CARD */}
+                {products.map((product, index) => 
+                    <Card key={index} product={product} index={index} />
+                )}
                     
                 </div>
             </div>

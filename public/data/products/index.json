@@ -1,0 +1,94 @@
+[
+    {
+      "id": 1,
+      "name": "Blender",
+      "seller_name": "John Doe",
+      "old_price": 34.45,
+      "new_price": 30.50,
+      "discount": 5,
+      "image": "",
+      "cartlist": false,
+      "wishlist": false,
+      "features": "This has up to 5 speed control, interactive display working screen, automatic stop and safety control.",
+      "specifications": "x1 Blender, x1 speed control, x1 touch screen, x1 casing."
+    },
+    {
+      "id": 2,
+      "name": "Vacuum Cleaner",
+      "seller_name": "Jane Smith",
+      "old_price": 79.99,
+      "new_price": 69.99,
+      "discount": 10,
+      "image": "",
+      "cartlist": false,
+      "wishlist": false,
+      "features": "High suction power, bagless design, HEPA filter, compact and lightweight.",
+      "specifications": "x1 Vacuum Cleaner, x1 HEPA filter, x2 nozzles, x1 dustbin."
+    },
+    {
+      "id": 3,
+      "name": "Smart TV",
+      "seller_name": "ElectroMart",
+      "old_price": 499.99,
+      "new_price": 459.99,
+      "discount": 8,
+      "image": "",
+      "cartlist": false,
+      "wishlist": false,
+      "features": "4K UHD display, built-in streaming apps, voice control, HDR support.",
+      "specifications": "x1 Smart TV, x1 remote control, x2 AAA batteries, x1 wall mount kit."
+    },
+    {
+      "id": 4,
+      "name": "Laptop",
+      "seller_name": "TechStore",
+      "old_price": 999.99,
+      "new_price": 899.99,
+      "discount": 10,
+      "image": "",
+      "cartlist": false,
+      "wishlist": false,
+      "features": "Intel i7 processor, 16GB RAM, 512GB SSD, backlit keyboard.",
+      "specifications": "x1 Laptop, x1 charger, x1 carrying case, x1 user manual."
+    },
+    {
+      "id": 5,
+      "name": "Headphones",
+      "seller_name": "AudioWorld",
+      "old_price": 149.99,
+      "new_price": 129.99,
+      "discount": 13,
+      "image": "",
+      "cartlist": false,
+      "wishlist": false,
+      "features": "Noise-cancelling, wireless Bluetooth, 20-hour battery life, foldable design.",
+      "specifications": "x1 Headphones, x1 charging cable, x1 carrying pouch, x1 user guide."
+    },
+    {
+      "id": 6,
+      "name": "Smartwatch",
+      "seller_name": "WearableTech",
+      "old_price": 199.99,
+      "new_price": 179.99,
+      "discount": 10,
+      "image": "",
+      "cartlist": false,
+      "wishlist": false,
+      "features": "Heart rate monitor, GPS, waterproof, customizable watch faces.",
+      "specifications": "x1 Smartwatch, x1 charging dock, x1 extra strap, x1 quick start guide."
+    },
+    {
+      "id": 7,
+      "name": "Microwave Oven",
+      "seller_name": "HomeAppliances",
+      "old_price": 129.99,
+      "new_price": 119.99,
+      "discount": 8,
+      "image": "",
+      "cartlist": false,
+      "wishlist": false,
+      "features": "800W power, 20L capacity, defrost function, child safety lock.",
+      "specifications": "x1 Microwave Oven, x1 glass turntable, x1 user manual, x1 warranty card."
+    }
+  ]
+  

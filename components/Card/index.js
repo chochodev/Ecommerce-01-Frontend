@@ -9,46 +9,6 @@ import '@/styles/components/card.css';
 
 const Card = ({product, index}) => {
 
-    // BACKEND FUNCTIONS
-
-    // BACKEND FOR GET REQUEST ( GET )
-    let [products, setProducts] =  useState([])
-
-    useEffect(() => {
-        getProducts()
-    }, [])
-
-    let getProducts = async () => {
-        let response = await fetch('http://127.0.0.1:8000/api/products/')
-        let data = await response.json()
-        setProducts()
-    }
-
-
-    // BACKEND FOR PUT REQUEST ( UPDATE )
-    const {id} = useParams()
-
-    // let updateProduct = async () => {
-    //     let response = await fetch(`http://127.0.0.1:8000/api/product/${id}/update`, {
-    //         method: "PUT",
-    //         headers: {
-    //             'Content-Type': 'application/json'
-    //         },
-    //         body:JSON.stringify(toggleWish())
-    //     })
-    // }
-
-    let updateWishList = async (value) => {
-        let response = await fetch(`http://127.0.0.1:8000/api/product/${product.id}/update`, {
-            method: "PUT",
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({'wishlist': value})
-        })
-
-    }
-
     // CARTLIST UPDATE FUNCTION
     const [addToCart, setAddToCart] = useState(product.cartlist);
     const toggleCart = () => {
@@ -71,7 +31,7 @@ const Card = ({product, index}) => {
 
   return (
     <div key={index} id='product-card'>
-        <Link className='product-img' to={`/product/${product.id}`} >
+        <Link className='product-img' href={`/product/${product.id}`} >
             <img src='/assets/images/product_01.jpg' />
         </Link>
         <div>
@@ -90,12 +50,12 @@ const Card = ({product, index}) => {
                 </div>
                 <div className='price-d'>
                     <span> -{product.discount}%</span>
-                    <Link href='' onClick={toggleWish} className='cart'>
+                    <Link href='/' onClick={toggleWish} className='cart'>
                         {addToWish ? <RiIcons.RiHeartFill className='ri-icon ri-heart-fill'/> : <RiIcons.RiHeartLine className='ri-icon ri-heart-line'/>}
                     </Link>
                 </div>
             </div>
-            <Link href='' onClick={toggleCart} className='cart'>
+            <Link href='/' onClick={toggleCart} className='cart'>
                 {!addToCart && <p>Add to Cart</p>}
                 {addToCart &&  <p>Remove from Cart</p>}
             </Link>

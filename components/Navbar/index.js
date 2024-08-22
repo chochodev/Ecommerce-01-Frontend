@@ -1,8 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
+import Link from 'next/link';
 
 import * as RiIcons from 'react-icons/ri';
 
@@ -166,10 +165,10 @@ const Navbar = () => {
                                 <li onClick={()=>{ setCategory(name)}} key={id}>
                                     <div className='select-text'>
                                         <RiIcons.RiSmartphoneLine  className="ri-icon ri-smartphone-line"/>
-                                                    <span>{name}</span>
+                                        <span>{name}</span>
                                     </div>
                                     <RiIcons.RiArrowDropRightLine className="ri-icon ri-arrow-drop-right-line"/>
-                                        </li>
+                                </li>
                             ))
                             }
                         </ul>
@@ -183,19 +182,19 @@ const Navbar = () => {
 
             <div className='nav'>
                 <div>
-                    <Link to={'/'} className="icon">
+                    <Link href={'/'} className="icon">
                         <RiIcons.RiUser6Line className="ri-icon ri-user-6-line"/>
                     </Link>
                     <span>Account</span>    
                 </div>
                 <div>
-                    <HashLink smooth to='/cart#mainWishlist' className="icon">
+                    <Link href='/cart#mainWishlist' className="icon" passHref>
                         <RiIcons.RiHeartLine className="ri-icon ri-heart-line"/>
-                    </HashLink>
+                    </Link>
                     <span>Wishlist</span>    
                 </div>
                 <div>
-                    <Link to={'/cart'} className="icon">
+                    <Link href={'/cart'} className="icon">
                         <RiIcons.RiShoppingCartLine className="ri-icon ri-shopping-cart-line"/>
                     </Link>
                     <span>Cart</span>    
