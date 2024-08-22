@@ -1,5 +1,5 @@
 # MallGo
-Live: [MallGo](https://mallgo.netlify.app)
+Live: [MallGo](https://mallgo.netlify.app).
 
 ## E-commerce website
 It has several functionality as a normal e-commerce.
