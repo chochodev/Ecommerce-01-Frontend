@@ -79,7 +79,7 @@ const Navbar = () => {
                                     <a href="#">- My mobile Item</a>
                                 </li>
                                 <li className="item">
-                                    <a href="#">- My mobile Item</a>
+                                    <a href="#">- My desktop Item</a>
                                 </li>
                                 <li className="item">
                                     <a href="#">- My mobile Item</a>
