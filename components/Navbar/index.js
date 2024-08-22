@@ -88,7 +88,7 @@ const Navbar = () => {
                                     <a href="#">- My wardrobe Item</a>
                                 </li>
                                 <li className="item">
-                                    <a href="#">- My mobile Item</a>
+                                    <a href="#">- My unique Item</a>
                                 </li>
                             </ul>
                         </div>
