@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/router'; 
+import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import * as RiIcons from 'react-icons/ri';
 
@@ -11,10 +11,9 @@ import Footer from '@/components/Footer';
 import './product.css';
 
 const Product = () => {
-    const router = useRouter();
-    const { id } = router.query;
+    const { id } = useParams();
 
-    return <>Id: {id}</>
+    // return <>Id: {id}</>
 
     let [product, setProduct] = useState({});
 
